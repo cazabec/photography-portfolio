@@ -1,0 +1,101 @@
+
+/*====== WIDTH ======*/
+.screenW {
+    width: 100%;
+}
+.fullW {
+    width: 100%;
+}
+/*====== HEIGHT ======*/
+.screenH {
+    height: 100vh;
+}
+.fullH {
+    height: 100%;
+}
+.height70 {
+    height: 30px;
+}
+/*====== BG COLOR ======*/
+.dGray {
+    background-color: #333;
+}
+.white {
+    background-color: #fff;
+}
+.white50 {
+    background-color: #ffffff80;
+}
+.black50 {
+    background-color: #00000080;
+}
+/*====== FONT ======*/
+.fSize2 {
+    font-size: 2rem;
+}
+/*====== IMAGE ======*/
+.imgCover {
+    object-fit: cover;
+}
+/*====== OVERFLOW ======*/
+.overflowH {
+    overflow: hidden;
+}
+/*====== TRANSITIONS ======*/
+.transition1l {
+    transition: left 1s ease-in-out;
+}
+/*====== POSITION ======*/
+.abs {
+    position: absolute;
+}
+.rel {
+    position: relative;
+}
+.left0 {
+    left: 0px;
+}
+.left100vw {
+    left: 100vw;
+}
+.leftM100vw {
+    left: -100vw;
+}
+.bot0 {
+    bottom: 0;
+}
+.padded {
+    padding-top: 85px;
+    background-color: var(--color-primary);
+}
+/*====== FLEX ======*/
+.df {
+    display: flex;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+}
+.fCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex1 {
+    flex: 1;
+}
+.flex8 {
+    flex: 8;
+}
+
+/*====== CUSTOM ======*/
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    transition: background-color 1s ease-in-out;
+}
