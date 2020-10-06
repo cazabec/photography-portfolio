@@ -75,6 +75,7 @@
     "develop": "gatsby develop",
     "test": "npm run lint:css && npm run lint:js && npm run check-pretty",
     "dev": "gatsby develop",
+    "setup": "node ./bin/setup.js",
     "lint:js": "eslint --ext .js,.jsx .",
     "lint:css": "stylelint 'src/**/*.js'",
     "check-pretty": "prettier -l {,src/**/}*.{js,jsx,json,css,scss}",
