@@ -1,4 +1,5 @@
 # Photography Portfolio - Gatsby + Contentful + Netlify
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bdd90732-7d76-4ebb-a031-2a227e036aab/deploy-status)](https://app.netlify.com/sites/boring-pare-58c7c4/deploys)
 
 [See it in action](https://lilian-cazabet.fr/)
 
@@ -15,7 +16,34 @@ This site makes heavy use of the [`gatsby-image`](https://next.gatsbyjs.org/pack
 - Contentful integration
 - SEO
 - Styled components
+- Blog, Galleries, Netlify contact form, Slideshow and more
+- Light mode / Dark mode
 
-##### Notes
+### How to start
 
-> Code can be used as a reference for other Gatsby projects, but this repo will not work out-of-the-box without replicating the Contentful data structure. If you would like to quickly bootstrap a Gatsby + Contentful + Netlify project, I recommend checking out the fantastic [GCN](https://github.com/ryanwiemer/gatsby-starter-gcn) starter.
+Create a contentful account  [here](https://www.contentful.com/sign-up/)
+Find your API keys by going to Settings ➡️ API Keys ➡️ Content Delivery / Preview tokens
+```powershell
+npm install
+```
+```powershell
+npm run setup
+```
+```powershell
+gatsby develop
+```
+Go to [localhost:8000](http://localhost:8000)
+
+### Configuration
+
+You can configure the website by updating [gatsby-config.js](gatsby-config.js) and [siteConfig.js](src/utils/siteConfig.js)
+
+### CI / CD
+
+You can use [Netlify](https://app.netlify.com/signup) to host your website and integrate the contact form to it.
+You can then link your Netlify account to [Gitlab](https://gitlab.com/users/sign_in) so that the site gets deployed each time you push a new commit on your repository.
+On top of that, you can also integrate Netlify to Contentful to launch a build
+
+#### Notes
+
+> You may have to replace some fonts defined in [Layout.js](src/components/Layout.js), I had to remove some fonts because they were not free of rights.
