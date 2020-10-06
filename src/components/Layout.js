@@ -6,25 +6,24 @@ import theme from '../styles/theme'
 import config from '../utils/siteConfig'
 import LayoutWrapper from './LayoutWrapper'
 import Menu from '../components/Menu'
-import { injectGlobal } from 'emotion'
 import FreightSansBold from '../styles/fonts/FreightSansBold.woff'
 import FreightSansBook from '../styles/fonts/FreightSansBook.woff'
 import $ from 'jquery/dist/jquery.slim'
-import { css, cx } from 'emotion'
+import { css, injectGlobal } from 'emotion'
 
 const colorSchemes = {
-  'darkMode':
-    '--color-body: #16161D; \
-    --color-base: white; \
-    --color-secondary: #F5F5F5 ; \
-    --color-tertiary: #c1c1c1 ; \
-    --color-highlight: #C0392B ;',
-  'lightMode':
-  '--color-body: white; \
-    --color-base: black; \
-    --color-secondary: #444444 ; \
-    --color-tertiary: white ; \
-    --color-highlight: #C0392B ;'
+  darkMode:
+    '--color-body: #16161D;' +
+    '--color-base: white;' +
+    '--color-secondary: #F5F5F5 ;' +
+    '--color-tertiary: #c1c1c1 ;' +
+    '--color-highlight: #C0392B ;',
+  lightMode:
+    '--color-body: white;' +
+    '--color-base: black;' +
+    '--color-secondary: #444444;' +
+    '--color-tertiary: white;' +
+    '--color-highlight: #C0392B;'
 };
 
 injectGlobal`
@@ -50,7 +49,7 @@ injectGlobal`
    }
 @font-face {
   font-family:"BureauGrotCondLight";
-  src:url("https://d1v5qbuvucewy1.cloudfront.net/webtype/Bureau-Grot-Cond-Book/32fcd702-c9f8-4846-8dae-e34bac5e4481-3.woff") format("woff");
+  src: url("/fonts/BureauGrotCondLight.woff") format("woff");
   font-style:normal;
   font-weight:bold
 }
@@ -68,11 +67,11 @@ body {
 }
 h1,h2,h3,h4,h5,h6,a,strong {
   color: var(--color-base);
-  font-family: "FreightSansBook";
+  font-family: "FreightSansBook", sans-serif;
 }
 p {
   color: var(--color-secondary);
-  font-family: "FreightSansBook";
+  font-family: "FreightSansBook", sans-serif;
 }
 a{
   transition: all 0.5s;
@@ -112,7 +111,7 @@ class Layout extends Component {
   }
 
   render() {
-    const { children, location } = this.props;
+    const { children } = this.props;
     return (
       <div className="siteRoot">
         <Helmet>

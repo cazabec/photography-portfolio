@@ -43,7 +43,6 @@ const Title = styled.h3`
 `
 
 const Year = styled.p`
-  font-size: 12px;
   text-transform: uppercase;
   font-size: 1rem;
   z-index: 3;

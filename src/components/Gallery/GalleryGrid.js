@@ -23,6 +23,7 @@ class GalleryComposition extends Component {
         Object.assign({ srcSet: photo.fluid.srcSet })
       ),
     }
+    this.openLightbox = this.openLightbox.bind(this);
   }
 
   gotoPrevLightboxImage() {
@@ -51,12 +52,13 @@ class GalleryComposition extends Component {
         {
             layout ?
               customModel.map((model, i) => React.cloneElement(layout, {
-                callback: this.openLightbox.bind(this, i),
+                callback: event => this.openLightbox(i, event),
                 ...model.node
               })) :
               photos.map((photo, i) => (
                 <DefaultImageWrapper
-                  callback={this.openLightbox.bind(this, i)}
+                  key={i}
+                  callback={event => this.openLightbox(i, event)}
                   {...photo}
                 />
               ))

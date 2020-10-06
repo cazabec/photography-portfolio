@@ -1,13 +1,33 @@
 import styled from '@emotion/styled'
+import React from 'react'
 
 const Div = styled.div`
-  div { text-align: center; padding: 150px; }
-  h1 { font-size: 50px; }
-  section { padding-top: 40px; }
-  div { font: 20px Helvetica, sans-serif; color: #333; }
-  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-  a { color: #dc8100; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
+  div {
+    text-align: center;
+    padding: 150px;
+    font: 20px Helvetica, sans-serif;
+    color: #333;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  section {
+    padding-top: 40px;
+  }
+  article {
+    display: block;
+    text-align: left;
+    width: 650px;
+    margin: 0 auto;
+  }
+  a {
+    color: #dc8100;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #333;
+    text-decoration: none;
+  }
 `
 
 const Maintenance = () => 

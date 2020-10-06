@@ -13,7 +13,16 @@ const Wrapper = styled.section`
   grid-template-areas: 'BiographyBodyTop' 'BiographyBodyBottom';
     animation: fadeup 3.5s;
     animation-timing-function: cubic-bezier(.25,.1,.25,1) ;
-    @keyframes fadeup { from { opacity: 0; transform: translateY(2rem);} to { opacity: 1; transform: translateY(0) }}
+    @keyframes fadeup {
+      from {
+        opacity: 0;
+        transform: translateY(2rem);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
 `
 
 const BiographyBody = props => {

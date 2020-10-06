@@ -8,7 +8,7 @@ const ProjectLink = styled(Link)`
   margin: 0;
   padding: 2rem;
   @media screen and (min-width: ${props => props.theme.responsive.medium}) {
-    padding: 0rem;
+    padding: 0;
     transition: all 0.5s;
     display: inline-block;
     &:hover div {
@@ -52,7 +52,16 @@ const Title = styled.h2`
   padding: 1rem;
     animation: fadeup 3.5s;
     animation-timing-function: cubic-bezier(.25,.1,.25,1) ;
-    @keyframes fadeup { from { opacity: 0; transform: translateY(2rem);} to { opacity: 1; transform: translateY(0) }}
+    @keyframes fadeup {
+      from {
+        opacity: 0;
+        transform: translateY(2rem);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
   @media screen and (min-width: ${props => props.theme.responsive.medium}) {
     padding: 1rem 0;
   }
@@ -64,8 +73,16 @@ const Date = styled.h4`
   padding: 1rem;
     animation: fadeup 3.5s;
     animation-timing-function: cubic-bezier(.25,.1,.25,1) ;
-    @keyframes fadeup { from { opacity: 0; transform: translateY(2rem);} to { opacity: 1; transform: translateY(0) }}
-  @media screen and (min-width: ${props => props.theme.responsive.medium}) {
+    @keyframes fadeup {
+      from {
+        opacity: 0;
+        transform: translateY(2rem);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }  @media screen and (min-width: ${props => props.theme.responsive.medium}) {
     padding: 1rem 0;
   }
 `
@@ -76,8 +93,16 @@ const Excerpt = styled.p`
   padding: 1rem;
     animation: fadeup 3.5s;
     animation-timing-function: cubic-bezier(.25,.1,.25,1) ;
-    @keyframes fadeup { from { opacity: 0; transform: translateY(2rem);} to { opacity: 1; transform: translateY(0) }}
-  @media screen and (min-width: ${props => props.theme.responsive.medium}) {
+    @keyframes fadeup {
+      from {
+        opacity: 0;
+        transform: translateY(2rem);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }  @media screen and (min-width: ${props => props.theme.responsive.medium}) {
     padding: 1rem 0;
   }
 `

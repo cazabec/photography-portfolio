@@ -26,7 +26,7 @@ const Title = styled.h2`
   text-align: center;
   font-size: 2rem;
   font-weight: 900;
-  font-family: "FreightSansBook";
+  font-family: "FreightSansBook", sans-serif;
 `
 const List = styled.ul`
   text-transform: capitalize;
@@ -63,7 +63,7 @@ color: var(--color-base) !important;
  a {
 color: var(--color-base) !important;
   &:hover {
-      color: var(--color-highlight)!important;
+      color: var(--color-highlight) !important;
 }
  }
  @media screen and (min-width: ${props => props.theme.responsive.medium}) {

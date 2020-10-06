@@ -28,7 +28,7 @@ const Body = styled.div`
     line-height: 1.6;
     margin: 0 0 1em 0;
     font-size: 1rem;
-    font-family: "ConstantiaRegular";
+    font-family: "ConstantiaRegular", sans-serif;
   }
 
   a {

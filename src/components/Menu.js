@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from '@emotion/styled'
 import { slide as Menu } from 'react-burger-menu'
-import Social from '../components/Social'
 import config from '../utils/siteConfig'
 import theme from '../styles/theme';
 import { useMediaQuery } from 'react-responsive'
@@ -32,7 +31,7 @@ const Title = styled(Link)`
   display: inline-block;
   h1 {
     padding: 1.25rem 2rem;
-    font-family: 'BureauGrotCondLight';
+    font-family: 'BureauGrotCondLight', sans-serif;
     font-weight: bold;
     font-size: 35px;
     font-style: normal;
@@ -146,7 +145,8 @@ const MenuPC = styled.div`
     &:hover {
       color: var(--color-highlight);
     }
-    font-family: 'FreightSansBook';
+
+    font-family: 'FreightSansBook', sans-serif;
   }
   section {
     margin: 0;
@@ -157,29 +157,29 @@ const MenuPC = styled.div`
 `
 
 const links = [
-  <Link to="/tearsheets">Tearsheets</Link>,
-  <Link to="/commercial">Commercial</Link>,
-  <Link to="/portraits">Portraits</Link>,
-  <Link to="/biography">About</Link>,
-  <Link to="/contact">Contact</Link>,
-  <a target="_blank" href={config.hansLucasShopLink}>Shop</a>,
-  <a target="_blank" href={config.hansLucasLink}>Hans Lucas</a>,
+  <Link key="tearsheets" to="/tearsheets">Tearsheets</Link>,
+  <Link key="commercial" to="/commercial">Commercial</Link>,
+  <Link key="portraits" to="/portraits">Portraits</Link>,
+  <Link key="biography" to="/biography">About</Link>,
+  <Link key="contact" to="/contact">Contact</Link>,
+  <a key="shop" target="_blank" rel="noreferrer" href={config.hansLucasShopLink}>Shop</a>,
+  <a key="hansLucas" target="_blank" rel="noreferrer" href={config.hansLucasLink}>Hans Lucas</a>,
 ]
 
 if (config.showBlog) {
-  links.push(<Link to="/blog">Blog</Link>);
+  links.push(<Link key="blog" to="/blog">Blog</Link>);
 }
 
 const explodeGalleriesLinks = (data) => {
   const galleries = data.allContentfulExtendedGallery.edges
-  return galleries.map(gallery => <li>
-      { renderLink(<Link to={`/${gallery.node.slug}/`}>{gallery.node.title}</Link>) }
+  return galleries.map(gallery => <li key={gallery.node.slug}>
+      { renderLink(<Link key={gallery.node.slug} to={`/${gallery.node.slug}/`}>{gallery.node.title}</Link>) }
   </li>);
 }
 
 const renderLink = link => {
   const currentPage = typeof window !== 'undefined' ?
-    window.location.pathname.replace(/^\/([^\/]*).*$/, '/$1') :
+    window.location.pathname.replace(/^\/([^/]*).*$/, '/$1') :
     '';
   const href = link.props.to;
   return href === currentPage ? <UnderlinedItem>{link}</UnderlinedItem> : <h4>{link}</h4>;
@@ -220,7 +220,8 @@ const Navigation = () => {
                     <h3><Link to="/series">Series</Link></h3>
                   </li>
                   {
-                    links.map(link => <li>
+                    links.map((link, i) =>
+                    <li key={i}>
                       <h3>
                         { link }
                       </h3>
@@ -245,7 +246,7 @@ const Navigation = () => {
                   <li>{renderLink(<Link to="/series">Series</Link>)}</li>
                 }
                 {
-                  links.map(link => <li>
+                  links.map((link, i) => <li key={i}>
                     { renderLink(link) }
                   </li>
                   )

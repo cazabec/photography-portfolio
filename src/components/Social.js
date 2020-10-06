@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import { IconContext } from "react-icons";
-import { IoMdCamera, IoLogoFacebook, IoLogoInstagram } from 'react-icons/io'
+import { IoLogoFacebook, IoLogoInstagram } from 'react-icons/io'
 import config from '../utils/siteConfig'
 
 const Wrapper = styled.section`
@@ -24,12 +24,12 @@ const Social = props => {
   return (
     <Wrapper>
       <SocialIcon>
-        <a href={config.instagramLink} rel="noopener" alt="instagram" target="_blank">
+        <a href={config.instagramLink} rel="noreferrer" alt="instagram" target="_blank">
           <IconContext.Provider value={{ size:"2.4em" }}><IoLogoInstagram style= {{fill: 'black'}}/></IconContext.Provider>
         </a>
       </SocialIcon>
       <SocialIcon>
-        <a href={config.facebookLink} rel="noopener" alt="facebook" target="_blank">
+        <a href={config.facebookLink} rel="noreferrer" alt="facebook" target="_blank">
           <IconContext.Provider value={{ size:"2.4em" }}><IoLogoFacebook style= {{fill: 'black'}} /></IconContext.Provider>
         </a>
       </SocialIcon>
