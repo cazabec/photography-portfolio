@@ -1,4 +1,5 @@
 # Photography Portfolio - Gatsby + Contentful + Netlify
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cb7b43c34eec4c919d6bd71967aa07b7)](https://app.codacy.com/gh/cazabec/photography-portfolio?utm_source=github.com&utm_medium=referral&utm_content=cazabec/photography-portfolio&utm_campaign=Badge_Grade)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bdd90732-7d76-4ebb-a031-2a227e036aab/deploy-status)](https://app.netlify.com/sites/boring-pare-58c7c4/deploys)
 
 [See it in action](https://lilian-cazabet.fr/)
