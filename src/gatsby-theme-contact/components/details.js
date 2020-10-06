@@ -1,26 +1,27 @@
 // src/gatsby-theme-contact/components/details.js
 /** @jsx jsx */
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import { IconContext } from "react-icons";
 import { MdLocationOn, MdPhone, MdEmail } from 'react-icons/md'
-import { jsx, Styled } from 'theme-ui'
+import { jsx } from 'theme-ui'
 
 const Details = () => (
   <>
     <IconContext.Provider value={{ size:"2.2em" }}><MdLocationOn style= {{fill: 'black'}}/></IconContext.Provider>
     <br />
     <div style={{paddingLeft: 10}}>
-      Lilian Cazabet
+      John doe
       <br />
-      1 chemin de Saouis
+      1 Pkw street
       <br />
-      31260 Cassagne
+      86578 NY City
     </div>
 
     <div style={{marginTop: 35}} >
       <IconContext.Provider value={{ size:"2.2em" }}><MdPhone style= {{fill: 'black'}}/></IconContext.Provider>
       <br />
-      <span>&nbsp;06 70 62 31 59</span>
+      <span>&nbsp;888 888 8888</span>
       <br />
     </div>
 
@@ -29,7 +30,7 @@ const Details = () => (
       <br />
 
       <span style={{paddingLeft: 10}}>
-        lilian.cazabet@wanadoo.fr
+        john.doe@gmail.com
       </span>
     </div>
   </>

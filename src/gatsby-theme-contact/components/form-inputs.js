@@ -15,17 +15,17 @@ const LabeledInput = ({ as = Input, label, ...props }) => {
 const FormInput = ({ ...props }) => (
   <>
     <LabeledInput
-      label='Nom'
+      label='Name'
       type='text'
       required
-      placeholder='Entrez votre nom'
+      placeholder='Enter your name'
       {...props}
     />
     <LabeledInput
       label='Email'
       type='email'
       required
-      placeholder='Entrez votre email'
+      placeholder='john.doe@gmail.com'
       {...props}
     />
     <LabeledInput
@@ -34,7 +34,7 @@ const FormInput = ({ ...props }) => (
       required
       minLength={10}
       rows={5}
-      placeholder='Laissez votre message ici'
+      placeholder='Leave a message here'
       {...props}
     />
   </>
