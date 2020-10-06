@@ -3,12 +3,17 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bdd90732-7d76-4ebb-a031-2a227e036aab/deploy-status)](https://app.netlify.com/sites/boring-pare-58c7c4/deploys)
 [![Maintainability](https://api.codeclimate.com/v1/badges/78f6967ad7ed742f011e/maintainability)](https://codeclimate.com/github/cazabec/photography-portfolio/maintainability)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/cazabec/photography-portfolio/issues)
+
 [See it in action](https://lilian-cazabet.fr/)
 
 ## Overview
 
 Codebase for [https://lilian-cazabet.fr/](https://lilian-cazabet.fr/) my photography portfolio.
-This website is built using Contentful, Netlify, and Gatsby V2; and was launched in June 2020. Based on [@iammatthias/.com](https://github.com/iammatthias/.com)
+This website is built using Contentful, Netlify, and Gatsby V2; and was launched in June 2020.
+It is based on [@iammatthias/.com](https://github.com/iammatthias/.com)
+
+This repository is for anybody who wants to create a minimalistic, fast and profesional portfolio website to show his work.
+Feel free to contribute to this project by creating pull requests.
 
 This site makes heavy use of the [`gatsby-image`](https://next.gatsbyjs.org/packages/gatsby-image/) plugin, pulling optimized fluid assets from Contentful.
 
@@ -46,6 +51,6 @@ You can use [Netlify](https://app.netlify.com/signup) to host your website and i
 You can then link your Netlify account to [Gitlab](https://gitlab.com/users/sign_in) so that the site gets deployed each time you push a new commit on your repository.
 On top of that, you can also integrate Netlify to Contentful to launch a build
 
-#### Notes
+### Notes
 
 > You may have to replace some fonts defined in [Layout.js](src/components/Layout.js), I had to remove some fonts because they were not free of rights.
