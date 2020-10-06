@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import spinner from '../static/spinners/camera-1.2s-173px.svg'
+import spinner from '../static/spinners/loader.svg'
 
 export default function HTML(props) {
   return (

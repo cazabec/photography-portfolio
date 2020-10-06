@@ -39,15 +39,15 @@ module.exports = {
     },
   },
   plugins: [
-    /*{
+    {
      resolve: 'gatsby-plugin-fathom',
      options: {
        // your Fathom server URL
        trackingUrl: 'liliancazabet.usesfathom.com',
        // unique site id (optional, required for Fathom v1.1.0+)
-       siteId: 'YXKOHEVS'
+       siteId: 'XXXXXXX'
      },
-   },*/
+   },
     {
       resolve: `gatsby-theme-contact`,
       options: {

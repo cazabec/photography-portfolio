@@ -22,7 +22,7 @@ const ToggleWrapper = styled.div`
 `
 
 function changeColorTheme() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [, setDarkMode] = useState(false);
   return () => setDarkMode(darkMode => {
     config.lightMode = !config.lightMode;
     return !darkMode;

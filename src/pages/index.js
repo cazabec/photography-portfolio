@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Maintenance from '../components/maintenance'
 import SEO from '../components/SEO'
-import styled from '@emotion/styled'
 
 import Slideshow from "../components/Slideshow/Slideshow";
 import "../components/Slideshow/custom.css";
