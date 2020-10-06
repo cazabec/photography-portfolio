@@ -3,8 +3,7 @@ let config = {
   siteTitle: 'Lilian Cazabet - Photographe',
   siteTitleAlt: 'Lilian Cazabet - Photographe', // This allows an alternative site title for SEO schema.
   publisher: 'Colin Cazabet', // Organization name used for SEO schema
-  siteDescription:
-    'Mon site portfolio avec mes toutes dernières galleries',
+  siteDescription: 'My portfolio website',
   siteUrl: 'https://lilian-cazabet.fr', // Site domain. Do not include a trailing slash! If you wish to use a path prefix you can read more about that here: https://www.gatsbyjs.org/docs/path-prefix/
   author: 'Colin Cazabet', // Author for RSS author segment and SEO schema
   authorUrl: 'https://lilian-cazabet.fr', // URL used for author and publisher schema, can be a social profile or other personal site
@@ -18,16 +17,16 @@ let config = {
   themeColor: '#F5F5F5', // Used for Offline Manifest
   copyright: '© 2020 Lilian Cazabet - All rights reserved ', // Copyright string for the RSS feed
   enableGalleryTags: false, // Enables tags in gallery pages
-  lightMode: true, // Enables light mode
-  enableDarkModeToggle: false, // show toggle button on gallery page
+  lightMode: true, // Enables light mode (otherwise darkMode)
+  enableDarkModeToggle: false, // show light mode toggle button on gallery page
   showBlog: false, // Shows blog
   showDotsOnHomepage: false, // show dots for pictures on homepage
   showCartIconInCommercials: false, // show cart icon link under the pictures in commercial page
-  explodeLinksInMenuIfLessThanXGalleries: 3,
+  explodeLinksInMenuIfLessThanXGalleries: 2, // if less than X extendedGalleries, they will be printed in menu
   hansLucasLink: 'http://hanslucas.com/lcazabet/photo', // hansLucas url
   hansLucasShopLink: 'http://www.hanslucas.com/lcazabet/shop', // HL shop url
-  instagramLink: 'https://www.instagram.com/lilian_cazabet/', //instagram url
-  facebookLink: 'https://www.facebook.com/lilian.cazabet', //facebook url
+  instagramLink: 'https://www.instagram.com/lilian_cazabet/', // Instagram url
+  facebookLink: 'https://www.facebook.com/lilian.cazabet', // Facebook url
   typeformUrl: 'https://colincazabet.typeform.com/to/KeDovxoN', // typeform form uri
 };
 
