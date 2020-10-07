@@ -44,7 +44,7 @@
     "path": "^0.12.7",
     "prismjs": "^1.21.0",
     "react": "^16.7.0-alpha.2",
-    "react-burger-menu": "^2.6.10",
+    "react-burger-menu": "^2.7.1",
     "react-dark-mode-toggle": "0.0.5",
     "react-dom": "^16.7.0-alpha.2",
     "react-emotion": "^10.0.0",
