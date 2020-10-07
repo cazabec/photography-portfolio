@@ -59,13 +59,8 @@
     "react-responsive-masonry": "^2.0.0",
     "react-transition-group": "^4.0.0",
     "react-typography": "^0.16.13",
-<<<<<<< HEAD
-    "stylelint": "^13.0.0",
-    "typescript": "^3.9.7",
-=======
     "stylelint": "^13.7.1",
     "typescript": "^3.4.5",
->>>>>>> 28bff785908c0d48b4d3397f956b7201b32d433d
     "typography": "^0.16.17",
     "typography-breakpoint-constants": "^0.16.0",
     "whatwg-fetch": "^2.0.4",
