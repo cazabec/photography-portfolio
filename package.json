@@ -10,7 +10,7 @@
     "babel-plugin-styled-components": "^1.5.1",
     "chalk": "^2.4.1",
     "compass-vertical-rhythm": "^1.4.5",
-    "contentful": "^7.6.0",
+    "contentful": "^7.14.6",
     "contentful-import": "^7.9.10",
     "emotion": "^10.0.9",
     "emotion-server": "^10.0.9",
