@@ -23,12 +23,12 @@
     "gatsby-plugin-emotion": "^4.3.11",
     "gatsby-plugin-fathom": "^1.0.4",
     "gatsby-plugin-feed": "2.5.12",
-    "gatsby-plugin-manifest": "2.4.29",
+    "gatsby-plugin-manifest": "2.10.0",
     "gatsby-plugin-netlify": "^2.3.15",
     "gatsby-plugin-nprogress": "2.3.11",
     "gatsby-plugin-react-helmet": "3.3.11",
     "gatsby-plugin-robots-txt": "^1.5.1",
-    "gatsby-plugin-sharp": "^2.6.36",
+    "gatsby-plugin-sharp": "^2.12.0",
     "gatsby-plugin-sitemap": "^2.4.13",
     "gatsby-plugin-styled-components": "^3.3.11",
     "gatsby-plugin-typography": "2.5.11",
@@ -85,7 +85,7 @@
     "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
-    "eslint": "6.7.1",
+    "eslint": "7.0.0",
     "eslint-config-gatsby-standard": "2.2.0",
     "percy": "0.20.2",
     "prettier": "1.19.1",
