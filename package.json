@@ -45,7 +45,7 @@
     "prismjs": "^1.23.0",
     "react": "^16.7.0-alpha.2",
     "react-burger-menu": "^2.7.1",
-    "react-dark-mode-toggle": "0.0.9",
+    "react-dark-mode-toggle": "0.2.0",
     "react-dom": "^16.7.0-alpha.2",
     "react-emotion": "^10.0.0",
     "react-headroom": "^3.0.0",
