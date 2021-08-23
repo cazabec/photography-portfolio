@@ -64,7 +64,7 @@
     "typography": "^0.16.17",
     "typography-breakpoint-constants": "^0.16.0",
     "whatwg-fetch": "^2.0.4",
-    "snyk": "^1.465.0"
+    "snyk": "^1.518.0"
   },
   "keywords": [
     "gatsby"
