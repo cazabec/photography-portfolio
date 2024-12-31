@@ -11,7 +11,7 @@
     "chalk": "^2.4.1",
     "compass-vertical-rhythm": "^1.4.5",
     "contentful": "^8.0.3",
-    "contentful-import": "^7.9.10",
+    "contentful-import": "^9.4.77",
     "emotion": "^10.0.9",
     "emotion-server": "^10.0.9",
     "emotion-theming": "^10.0.10",
